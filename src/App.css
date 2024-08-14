@@ -1,0 +1,54 @@
+.container {
+    padding: 10px;
+  }
+  
+  /* Styles for tablets and up */
+  @media (min-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  /* Styles for desktops and up */
+  @media (min-width: 992px) {
+    .container {
+      padding: 40px;
+      margin-left: 200px;
+      margin-right: 200px; 
+    }
+  }
+
+.page-title {
+    color: #0c0664; /* Red color */
+    font-size: 36px; /* Font size */
+  }
+  .card-container {
+    display: flex;          /* Align children horizontally */
+    gap: 0;              /* Space between cards */
+    padding: 0 16px;        /* Optional padding around the container */
+    
+  }
+  
+  .card-container .ant-card {
+    height: 400px;            /* Ensure cards have the same height */
+    margin-top: 10px;
+    background-color: #479dda; /* Set the background color here */
+  }
+  
+  /* Optional: To ensure cards occupy full height of their container */
+  .card-container {
+    align-items: flex-start; /* Align items to the start of the container */
+  }
+  .custom-divider {
+    border-color: #0c0664; /* Border color */
+    border-top-width: 2px; /* Thickness of the line */
+    border-style: solid; /* Line style (solid, dashed, dotted, etc.) */
+  }
+
+  .mission-paragraph {
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  /* src/Header.css */

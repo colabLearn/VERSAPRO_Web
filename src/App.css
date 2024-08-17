@@ -14,25 +14,25 @@
     .container {
       padding: 40px;
       margin-left: 200px;
-      margin-right: 200px; 
+      margin-right: 150px; 
     }
   }
 
 .page-title {
-    color: #0c0664; /* Red color */
+    color: #babac0; /* Red color */
     font-size: 36px; /* Font size */
   }
   .card-container {
     display: flex;          /* Align children horizontally */
     gap: 0;              /* Space between cards */
-    padding: 0 16px;        /* Optional padding around the container */
+    padding: 16px;        /* Optional padding around the container */
     
   }
   
   .card-container .ant-card {
     height: 400px;            /* Ensure cards have the same height */
     margin-top: 10px;
-    background-color: #479dda; /* Set the background color here */
+    background-color: #dadcdd; /* Set the background color here */
   }
   
   /* Optional: To ensure cards occupy full height of their container */
@@ -40,15 +40,47 @@
     align-items: flex-start; /* Align items to the start of the container */
   }
   .custom-divider {
-    border-color: #0c0664; /* Border color */
+    border-color: #bbbac2; /* Border color */
     border-top-width: 2px; /* Thickness of the line */
     border-style: solid; /* Line style (solid, dashed, dotted, etc.) */
   }
 
   .mission-paragraph {
-    font-size: 20px;
+    font-size: 30px;
     text-align: justify;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Handwritten', Friendly;
     line-height: 1.6;
+    color: rgb(204, 227, 233);
   }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Great Vibes', cursive; /* Apply the Great Vibes font */
+  }
+  .header div {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    height: 40px;
+    margin-right: 16px;
+  }
+
+.menu {
+  margin: 16px 0;
+}
+.home-card {
+  width: 100%;
+  background-size: cover;        /* Ensure the image covers the entire card */
+  background-position: center;   /* Center the image */
+  color: #fff;                   /* Adjust text color for readability */
+  padding: 10px;                 /* Optional padding for content */
+  background-image: url('/images/cardBack1.jpg'); /* Set your image path here */
+}
+.content-container div {
+  background: colorBgContainer;
+  padding: 0;
+}
+
   /* src/Header.css */

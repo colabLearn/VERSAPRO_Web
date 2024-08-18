@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import {Layout, Breadcrumb, theme , Card, Carousel} from 'antd'
 import './App.css'
-const{Header, Content, Footer} = Layout;
-const{Meta} = Card;
+const{Content, Footer} = Layout;
+
 
 function App() {
   

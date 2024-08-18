@@ -1,20 +1,23 @@
-#Specify the base image
-FROM node:18-alpine AS build
+# Use the official Node.js 18 image
+FROM node:18-alpine 
 
-# Set the working directory
-WORKDIR /versapro
+# Set the working directory in the container
+WORKDIR /app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
-#Install the dependencies
-RUN  npm install
+# Install dependencies
+RUN npm install
 
 # Copy the rest of the application code
 COPY . .
 
-#Build the app
+# Build the application
 RUN npm run build
 
-# Serve the app
-CMD ["npm", "start"]
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Start the Vite preview server
+CMD ["npm", "run", "start"]

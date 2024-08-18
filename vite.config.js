@@ -5,6 +5,14 @@ import eslint from 'vite-plugin-eslint';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), eslint()],
+  server: {
+    port: 3000,
+    host: '0.0.0.0',
+  },
+  preview: {
+    port: 3000,  // Add this line to force Vite preview to use port 3000
+    host: '0.0.0.0',
+  },
    build: {
     outDir: 'build', // Set output directory to build
     rollupOptions: {

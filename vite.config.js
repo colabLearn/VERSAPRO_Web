@@ -5,10 +5,8 @@ import eslint from 'vite-plugin-eslint';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), eslint()],
-  server:{
-    port: 3000,
-  },
-  build: {
+   build: {
+    outDir: 'build', // Set output directory to build
     rollupOptions: {
       output: {
         manualChunks: {

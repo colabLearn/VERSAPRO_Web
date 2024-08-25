@@ -22,29 +22,6 @@
   color: #babac0; /* Red color */
   font-size: 36px; /* Font size */
 }
-.card-container {
-  display: flex;          /* Align children horizontally */
-  gap: 0;              /* Space between cards */
-  padding: 16px;        /* Optional padding around the container */
-  
-}
-
-.card-container .ant-card {
-  height: 400px;            /* Ensure cards have the same height */
-  margin-top: 10px;
-  background-color: #dadcdd; /* Set the background color here */
-}
-
-/* Optional: To ensure cards occupy full height of their container */
-.card-container {
-  align-items: flex-start; /* Align items to the start of the container */
-}
-.custom-divider {
-  border-color: #bbbac2; /* Border color */
-  border-top-width: 2px; /* Thickness of the line */
-  border-style: solid; /* Line style (solid, dashed, dotted, etc.) */
-}
-
 .mission-paragraph {
   font-size: 30px;
   text-align: justify;
@@ -82,5 +59,42 @@ background-image: url('/images/cardBack1.jpg'); /* Set your image path here */
 background: colorBgContainer;
 padding: 0;
 }
+/* Style for the Card component */
+.team-members .ant-card {
+  width: 300px; /* Adjust the width of the Card */
+  height: 300px; /* Adjust the height of the Card */
+  margin: auto; /* Centers the Card inside the table cell */
+  display: flex;
+  /*justify-content: center;   Centers the content horizontally */
+  /*align-items: center;   Centers the content vertically */
+  overflow: hidden;  /* Ensures that any overflow content is hidden */
+  padding: 0;  /* Removes any padding around the card content */
+}
 
+.profile-img{
+  width: 100%;  /* Make the image take up the full width of the card */
+  height: 100%;  /* Make the image take up the full height of the card */
+  object-fit: cover;  /* Ensures the image covers the entire card area */
+  border-radius: 4px; /* Optional: Add a slight rounding to the image corners */
+}
+.profile-div .profile-text {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center; /* Center the content inside the paragraph */
+}
+
+.profile-div .profile-text a {
+  color: #000;
+  text-decoration: none;
+}
+
+.profile-div .profile-text a:hover {
+  color: #230ac5;
+  text-decoration: underline; /* Optional: add underline on hover */
+}
+.custom-divider {
+  border-color: #172102  !important; /* Set the border color */
+  border-top: 5px solid #172102 !important;
+}
 /* src/Header.css */

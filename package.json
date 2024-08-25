@@ -1,4 +1,5 @@
 {
+  "homepage": "https://colabLearn.github.io/VERSAPRO_Web",
   "name": "versapro",
   "private": true,
   "version": "0.0.0",
@@ -7,6 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "start": "vite --host",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

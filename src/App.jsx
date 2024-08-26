@@ -19,23 +19,23 @@ return (
   
   <Layout className='container'>
   
-    <header className="header">
+    <header id='home' className="header">
       <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"></link>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <img className='logo'
             src="images/logo3.jpg"  // Replace with the path to your logo image
             alt="Company Logo" />
           <Breadcrumb className='menu'>
-            <Breadcrumb.Item><a href="#section1">Home</a></Breadcrumb.Item>
-            <Breadcrumb.Item><a href="#section2">Team</a></Breadcrumb.Item>
-            <Breadcrumb.Item><a href="#section3">Our projects</a></Breadcrumb.Item>
+            <Breadcrumb.Item><a href="#home">Home</a></Breadcrumb.Item>
+            <Breadcrumb.Item><a href="#team">Team</a></Breadcrumb.Item>
+            <Breadcrumb.Item><a href="#project">Our projects</a></Breadcrumb.Item>
           </Breadcrumb>
         </div>
       </header>
    
     <Content className='content-container'>
    
-      <div id='section1' className='home-card-container'>
+      <section id='home' className='home-card-container'>
         <Card  className='home-card'
               title="Our Mission" 
               hoverable>
@@ -49,12 +49,12 @@ return (
             </p>
           </Carousel>
         </Card>
-      </div>
+      </section>
 
   <Divider className="custom-divider">
     <b>Our Team</b>
   </Divider>
-    <div id='section2' className='profile-div-container'>
+    <section id='team' className='profile-div-container'>
       <table className='team-members'>
         <tr>
           <td>
@@ -69,7 +69,7 @@ return (
                       >
                       Adetunji Adeniran
                     </a>
-                  <br />
+                    <br />
                     Team/Tech Lead.
                   </p>
               </div>
@@ -95,13 +95,13 @@ return (
           </td>
         </tr>
       </table>
-    </div>
+    </section>
     <Divider className="custom-divider">
     <b>Our Projects</b>
   </Divider>
-    <div id='section3' className='project-div-container'>
+    <section id='project' className='project-div-container'>
       Project container
-    </div>
+    </section>
     </Content>
       <Footer
         style={{

@@ -1,7 +1,7 @@
 {
   "homepage": "https://colabLearn.github.io/VERSAPRO_Web/",
   "name": "versapro",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -58,7 +58,7 @@ return (
       <table className='team-members'>
         <tr>
           <td>
-            <Card  hoverable>
+            <Card id='profile-card' hoverable>
               <div className='profile-div'>
                 <img className='profile-img' src="/images/MD_CEO.jpg" alt='Adetunji Adeniran' />
                   <p className='profile-text'>

@@ -97,4 +97,9 @@ padding: 0;
   border-color: #172102  !important; /* Set the border color */
   border-top: 5px solid #172102 !important;
 }
+section {
+  display: flex;
+  justify-content: center; /* Center the card horizontally */
+  padding: 20px; /* Optional: Add padding to the section */
+}
 /* src/Header.css */

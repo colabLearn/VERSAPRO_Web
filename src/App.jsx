@@ -1,6 +1,11 @@
 import React, {useEffect} from 'react';
-import {Layout, Breadcrumb, theme , Card, Carousel, Divider} from 'antd'
+import {Layout, Breadcrumb, theme , Divider } from 'antd'
 import './App.css'
+import Home from './components/Home';
+import Team from './components/Team';
+import Project from './components/Project';
+import Contact from './components/Contact'; // Import the new Contact component
+
 const{Content, Footer} = Layout;
 
 
@@ -29,6 +34,7 @@ return (
             <Breadcrumb.Item><a href="#home">Home</a></Breadcrumb.Item>
             <Breadcrumb.Item><a href="#team">Team</a></Breadcrumb.Item>
             <Breadcrumb.Item><a href="#project">Our projects</a></Breadcrumb.Item>
+            <Breadcrumb.Item><a href="#contact">Contact Us</a></Breadcrumb.Item> {/* Add Contact Us */}
           </Breadcrumb>
         </div>
       </header>
@@ -36,72 +42,27 @@ return (
     <Content className='content-container'>
    
       <section id='home' className='home-card-container'>
-        <Card  className='home-card'
-              title="Our Mission" 
-              hoverable>
-          <Carousel autoplay autoplaySpeed={30000} speed={1000}>
-            <p className='mission-paragraph'>
-                Leading the Revolution with Cutting-Edge Technology and Innovative Solutions for a Better Tomorrow.
-            </p>
-            <p className='mission-paragraph'>
-                Empowering the next generation of tech leaders and bridging the digital divide by offering 
-                widespread access to top-tier technology training for all.
-            </p>
-          </Carousel>
-        </Card>
+        <Home />
       </section>
 
-  <Divider className="custom-divider">
-    <b>Our Team</b>
-  </Divider>
-    <section id='team' className='profile-div-container'>
-      <table className='team-members'>
-        <tr>
-          <td>
-            <Card id='profile-card' hoverable>
-              <div className='profile-div'>
-                <img className='profile-img' src="/images/MD_CEO.jpg" alt='Adetunji Adeniran' />
-                  <p className='profile-text'>
-                    <a 
-                      href="/Tunji-profile-page" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      >
-                      Adetunji Adeniran
-                    </a>
-                    <br />
-                    Team/Tech Lead.
-                  </p>
-              </div>
-            </Card>
-          </td>
-          <td>
-          <Card  hoverable>
-              <div className='profile-div'>
-                <img className='profile-img' src="/images/diran.jpg" alt='Diran Adeniran' />
-                  <p className='profile-text'>
-                    <a 
-                      href="/diran-profile-page" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      >
-                      Diran Adeniran
-                    </a>
-                  <br />
-                    Operation Lead.
-                  </p>
-              </div>
-            </Card>
-          </td>
-        </tr>
-      </table>
+      <Divider className="custom-divider">
+          <b>Our Team</b>
+      </Divider>
+      <section id='team' className='profile-div-container'>
+            <Team />
+      </section>
+      <Divider className="custom-divider">
+        <b>Our Projects</b>
+      </Divider>
+    <section id='project' className='project-div-container'>
+     <Project /> 
     </section>
     <Divider className="custom-divider">
-    <b>Our Projects</b>
-  </Divider>
-    <section id='project' className='project-div-container'>
-      Project container
-    </section>
+          <b>Contact Us</b>
+        </Divider>
+        <section id='contact' className='contact-div-container'>
+          <Contact />
+        </section>
     </Content>
       <Footer
         style={{
@@ -114,3 +75,5 @@ return (
 }
 
 export default App;
+
+

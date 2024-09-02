@@ -6,13 +6,13 @@ const team = [
   {
     image_url: "/images/MD_CEO.jpg",
     profile_link: "/Tunji-profile-page",
-    name: 'Tunji Babatunde',
+    name: 'Adetunji Adeniran',
     position: "Tech Lead",
   },
   {
     image_url: "/images/diran.jpg",
     profile_link: "/Diran-profile-page",
-    name: 'Diran Lekan',
+    name: 'Adediran Adeniran',
     position: "Operations Lead",
   },
 ];

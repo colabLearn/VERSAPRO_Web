@@ -14,13 +14,18 @@ const team = [
     profile_link: "/Diran-profile-page",
     name: 'Adediran Adeniran',
     position: "Operations Lead",
+  },{
+    image_url: "/images/manager.jpg",
+    profile_link: "/kenny-profile-page",
+    name: 'Kehinde Adeniran',
+    position: "Team Manager",
   },
 ];
 
 const Team = () => {
   const rows = [];
-  for (let i = 0; i < team.length; i += 2) {
-    rows.push(team.slice(i, i + 2));
+  for (let i = 0; i < team.length; i += 3) {
+    rows.push(team.slice(i, i + 3));
   }
 
   return (

@@ -1,27 +1,28 @@
+/* General Container Styles */
 .container {
   padding: 10px;
 }
 
-/* Styles for tablets and up */
 @media (min-width: 768px) {
   .container {
     padding: 20px;
   }
 }
 
-/* Styles for desktops and up */
 @media (min-width: 992px) {
   .container {
     padding: 40px;
     margin-left: 200px;
-    margin-right: 150px; 
+    margin-right: 150px;
   }
 }
 
+/* Typography */
 .page-title {
-  color: #babac0; /* Red color */
-  font-size: 36px; /* Font size */
+  color: #babac0;
+  font-size: 36px;
 }
+
 .mission-paragraph {
   font-size: 30px;
   text-align: justify;
@@ -29,59 +30,67 @@
   line-height: 1.6;
   color: rgb(204, 227, 233);
 }
+
+/* Header Styles */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Great Vibes', cursive; /* Apply the Great Vibes font */
+  font-family: 'Great Vibes', cursive;
 }
+
 .header div {
   display: flex;
   align-items: center;
 }
+
 .logo {
   height: 40px;
   margin-right: 16px;
 }
 
 .menu {
-margin: 16px 0;
-}
-.home-card {
-width: 100%;
-background-size: cover;        /* Ensure the image covers the entire card */
-background-position: center;   /* Center the image */
-color: #fff;                   /* Adjust text color for readability */
-padding: 10px;                 /* Optional padding for content */
-background-image: url('/images/cardBack1.jpg'); /* Set your image path here */
-}
-.content-container div {
-background: colorBgContainer;
-padding: 0;
-}
-/* Style for the Card component */
-.team-members .ant-card {
-  width: 300px; /* Adjust the width of the Card */
-  height: 300px; /* Adjust the height of the Card */
-  margin: auto; /* Centers the Card inside the table cell */
-  display: flex;
-  /*justify-content: center;   Centers the content horizontally */
-  /*align-items: center;   Centers the content vertically */
-  overflow: hidden;  /* Ensures that any overflow content is hidden */
-  padding: 0;  /* Removes any padding around the card content */
+  margin: 16px 0;
 }
 
-.profile-img{
-  width: 100%;  /* Make the image take up the full width of the card */
-  height: 100%;  /* Make the image take up the full height of the card */
-  object-fit: cover;  /* Ensures the image covers the entire card area */
-  border-radius: 4px; /* Optional: Add a slight rounding to the image corners */
+/* Home Card */
+.home-card {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 10px;
+  background-image: url('/images/cardBack1.jpg');
 }
+
+/* Content Container */
+.content-container div {
+  background: colorBgContainer;
+  padding: 0;
+}
+
+/* Team Section */
+.team-members .ant-card {
+  width: 180px;
+  height: 225px;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 .profile-div .profile-text {
   margin-top: 10px;
   font-weight: bold;
   font-size: 10px;
-  text-align: center; /* Center the content inside the paragraph */
+  text-align: center;
 }
 
 .profile-div .profile-text a {
@@ -91,53 +100,52 @@ padding: 0;
 
 .profile-div .profile-text a:hover {
   color: #230ac5;
-  text-decoration: underline; /* Optional: add underline on hover */
+  text-decoration: underline;
 }
+
+/* Custom Divider */
 .custom-divider {
-  border-color: #172102  !important; /* Set the border color */
   border-top: 5px solid #172102 !important;
 }
+
+/* Section Styles */
 section {
   display: flex;
-  justify-content: center; /* Center the card horizontally */
-  padding: 20px; /* Optional: Add padding to the section */
+  justify-content: center;
+  padding: 20px;
 }
-/* App.css or your CSS file */
 
-/* Project.css */
-
+/* Collapse Component */
 .ant-collapse {
-  width: 100%; /* Ensure Collapse spans full width */
+  width: 100%;
 }
 
 .ant-collapse-header {
   display: flex;
-  align-items: center; /* Align items vertically in the header */
-  width: 100%; /* Ensure header spans full width */
-  box-sizing: border-box; /* Handle padding/margin properly */
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .ant-collapse-header img {
-  width: 40px; /* Adjust the logo size as needed */
+  width: 40px;
   height: 40px;
-  margin-right: 8px; /* Space between logo and text */
+  margin-right: 8px;
 }
 
-.ant-collapse-content {
-  padding: 16px; /* Adjust padding for content area */
-}
-
+.ant-collapse-content,
 .ant-collapse-content-box {
-  padding: 16px; /* Ensure consistent padding */
+  padding: 16px;
 }
 
+/* Project Description */
 .project-description ul {
-  list-style-type: disc; /* Display bullet points */
-  margin-left: 20px; /* Indent the list items */
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
 .project-description p {
-  margin: 0 0 10px; /* Margin between paragraphs */
+  margin: 0 0 10px;
 }
 
 .project-link {
@@ -145,6 +153,7 @@ section {
   margin-top: 10px;
 }
 
+/* Contact Container */
 .contact-container {
   padding: 20px;
   background-color: var(--color-bg-container);
@@ -174,18 +183,17 @@ section {
   text-decoration: underline;
 }
 
-/* New CSS for side-by-side addresses */
+/* Address Wrapper */
 .address-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 20px; /* Add space between the two addresses */
+  gap: 20px;
 }
 
 .address-item {
-  width: 45%; /* Make sure each address takes up nearly half of the container width */
+  width: 45%;
 }
 
-/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
   .address-wrapper {
     flex-direction: column;
@@ -197,6 +205,3 @@ section {
     margin-bottom: 20px;
   }
 }
-
-
-/* src/Header.css */

@@ -15,7 +15,7 @@ export default defineConfig({
     host: '0.0.0.0',
   },
    build: {
-    outDir: 'build', // Set output directory to build
+    outDir: 'dist', // Set output directory to build
     rollupOptions: {
       output: {
         manualChunks: {

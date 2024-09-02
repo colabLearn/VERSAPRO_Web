@@ -174,5 +174,29 @@ section {
   text-decoration: underline;
 }
 
+/* New CSS for side-by-side addresses */
+.address-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Add space between the two addresses */
+}
+
+.address-item {
+  width: 45%; /* Make sure each address takes up nearly half of the container width */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .address-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 
 /* src/Header.css */

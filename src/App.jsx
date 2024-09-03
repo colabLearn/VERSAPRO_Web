@@ -26,16 +26,20 @@ return (
   
     <header id='home' className="header">
       <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"></link>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <img className='logo'
             src="images/logo3.jpg"  // Replace with the path to your logo image
             alt="Company Logo" />
-          <Breadcrumb className='menu'>
-            <Breadcrumb.Item><a href="#home">Home</a></Breadcrumb.Item>
-            <Breadcrumb.Item><a href="#team">Team</a></Breadcrumb.Item>
-            <Breadcrumb.Item><a href="#project">Our projects</a></Breadcrumb.Item>
-            <Breadcrumb.Item><a href="#contact">Contact Us</a></Breadcrumb.Item> {/* Add Contact Us */}
-          </Breadcrumb>
+            <Breadcrumb
+              className='menu'
+              items={[
+                { title: <a href="#home">Home</a> },
+                { title: <a href="#team">Team</a> },
+                { title: <a href="#project">Our projects</a> },
+                { title: <a href="#contact">Contact Us</a> }
+              ]}
+            />
         </div>
       </header>
    

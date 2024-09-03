@@ -1,14 +1,24 @@
-/* General Container Styles */
-.container {
-  padding: 10px;
+/* Default Styles (applies to all devices by default) */
+body {
+  font-size: 14px; /* Default for mobile phones */
 }
 
-@media (min-width: 768px) {
+.container {
+  padding: 10px; /* Default for mobile phones */
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  
   .container {
     padding: 20px;
   }
 }
 
+/* For larger screens (desktops) */
 @media (min-width: 992px) {
   .container {
     padding: 40px;
@@ -109,7 +119,20 @@
   color: #230ac5;
   text-decoration: underline;
 }
-
+/*Responsive adjustments*/
+@media(max-width: 767){
+  .team-members{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.team-members .ant-card{
+  width: 100%;
+  height: auto !important;
+}
+.profile-img{
+  height: auto !important;
+}
 /* Custom Divider */
 .custom-divider {
   border-top: 5px solid #172102 !important;
@@ -204,14 +227,3 @@ section {
   max-width: 45%; /* Limit width for larger screens */
 }
 
-@media (max-width: 768px) {
-  .address-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .address-item {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}

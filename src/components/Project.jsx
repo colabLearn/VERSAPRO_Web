@@ -2,8 +2,6 @@ import React from 'react';
 import { Collapse } from 'antd';
 import '../App'; // Ensure correct path to your CSS
 
-const { Panel } = Collapse;
-
 const projects = [
   {
     key: '1',
@@ -89,7 +87,6 @@ const projects = [
     ),
     projectLink: "/verspro_services",
   },
-  
 ];
 
 const CustomHeader = ({ logoUrl, label }) => (
@@ -100,27 +97,29 @@ const CustomHeader = ({ logoUrl, label }) => (
 );
 
 const Project = () => (
-  <Collapse accordion className="ant-collapse">
-    {projects.map(project => (
-      <Panel 
-        header={<CustomHeader logoUrl={project.projectLogoUrl} label={project.label} />} 
-        key={project.key}
-      >
-        <div className="project-description">
-          {project.projectDescription}
-        </div>
-        <a 
-          href={project.projectLink} 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="project-link"
-        >
-          View More
-        </a>
-      </Panel>
-    ))}
-  </Collapse>
+  <Collapse
+    accordion
+    className="ant-collapse"
+    items={projects.map(project => ({
+      key: project.key,
+      label: <CustomHeader logoUrl={project.projectLogoUrl} label={project.label} />,
+      children: (
+        <>
+          <div className="project-description">
+            {project.projectDescription}
+          </div>
+          <a 
+            href={project.projectLink} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            View More
+          </a>
+        </>
+      ),
+    }))}
+  />
 );
 
 export default Project;
-

@@ -46,17 +46,18 @@ return (
       </section>
 
       <Divider className="custom-divider">
-          <b>Our Team</b>
-      </Divider>
-      <section id='team' className='profile-div-container'>
-            <Team />
-      </section>
-      <Divider className="custom-divider">
         <b>Our Projects</b>
       </Divider>
     <section id='project' className='project-div-container'>
      <Project /> 
     </section>
+      <Divider className="custom-divider">
+          <b>Our Team</b>
+      </Divider>
+      <section id='team' className='profile-div-container'>
+            <Team />
+      </section>
+      
     <Divider className="custom-divider">
           <b>Contact Us</b>
         </Divider>

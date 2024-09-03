@@ -70,13 +70,20 @@
 }
 
 /* Team Section */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between team cards */
+  justify-content: center;
+}
+
 .team-members .ant-card {
   width: 180px;
   height: 225px;
-  margin: auto;
   display: flex;
   overflow: hidden;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .profile-img {
@@ -111,7 +118,8 @@
 /* Section Styles */
 section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
@@ -188,10 +196,12 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .address-item {
-  width: 45%;
+  width: 100%; /* Default to full width for small screens */
+  max-width: 45%; /* Limit width for larger screens */
 }
 
 @media (max-width: 768px) {

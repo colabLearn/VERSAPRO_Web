@@ -27,7 +27,7 @@ return (
     <header id='home' className="header">
       <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"></link>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div className='header' >
           <img className='logo'
             src="images/logo3.jpg"  // Replace with the path to your logo image
             alt="Company Logo" />

@@ -47,6 +47,8 @@ body {
   align-items: center;
   justify-content: space-between;
   font-family: 'Great Vibes', cursive;
+  margin-left: 10px;
+  
 }
 
 .header div {

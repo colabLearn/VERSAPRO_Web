@@ -1,3 +1,4 @@
+
 /* Default Styles (applies to all devices by default) */
 body {
   font-size: 14px; /* Default for mobile phones */
@@ -81,60 +82,6 @@ body {
   padding: 0;
 }
 
-/* Team Section */
-.team-members {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Space between team cards */
-  justify-content: center;
-}
-
-.team-members .ant-card {
-  width: 180px;
-  height: 225px;
-  display: flex;
-  overflow: hidden;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.profile-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-.profile-div .profile-text {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 10px;
-  text-align: center;
-}
-
-.profile-div .profile-text a {
-  color: #000;
-  text-decoration: none;
-}
-
-.profile-div .profile-text a:hover {
-  color: #230ac5;
-  text-decoration: underline;
-}
-/*Responsive adjustments*/
-@media(max-width: 767){
-  .team-members{
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.team-members .ant-card{
-  width: 100%;
-  height: auto !important;
-}
-.profile-img{
-  height: auto !important;
-}
 /* Custom Divider */
 .custom-divider {
   border-top: 5px solid #172102 !important;
@@ -184,48 +131,5 @@ section {
 .project-link {
   display: inline-block;
   margin-top: 10px;
-}
-
-/* Contact Container */
-.contact-container {
-  padding: 20px;
-  background-color: var(--color-bg-container);
-  border-radius: 8px;
-}
-
-.contact-container h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.contact-container address {
-  font-style: normal;
-  line-height: 1.6;
-}
-
-.contact-container p {
-  margin-bottom: 10px;
-}
-
-.contact-container a {
-  color: #1890ff;
-  text-decoration: none;
-}
-
-.contact-container a:hover {
-  text-decoration: underline;
-}
-
-/* Address Wrapper */
-.address-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-
-.address-item {
-  width: 100%; /* Default to full width for small screens */
-  max-width: 45%; /* Limit width for larger screens */
 }
 

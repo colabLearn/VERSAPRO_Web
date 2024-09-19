@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Team from './components/Team';
 import Project from './components/Project';
 import Contact from './components/Contact'; // Import the new Contact component
+import Partner  from './components/Patners';
 
 const{Content, Footer} = Layout;
 
@@ -66,8 +67,18 @@ return (
           <b>Contact Us</b>
         </Divider>
         <section id='contact' className='contact-div-container'>
-          <Contact />
+        <Contact />
+        
         </section>
+        
+        <Divider className="custom-divider">
+          <b>Our Partners</b>
+        </Divider>
+        <section id='partners' className='partners-div-container'>
+        
+        <Partner />
+        </section>
+       
     </Content>
       <Footer
         style={{

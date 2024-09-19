@@ -64,7 +64,7 @@ return (
       </section>
       
     <Divider className="custom-divider">
-          <b>Contact Us</b>
+          <b>Contact Us Now</b>
         </Divider>
         <section id='contact' className='contact-div-container'>
         <Contact />

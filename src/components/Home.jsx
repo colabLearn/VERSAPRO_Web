@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Carousel } from 'antd';
-import '../App.css';
+import '../components_css/Home.css';
 
 const Home = () => (
   <Card className='home-card' title="Our Mission" hoverable>

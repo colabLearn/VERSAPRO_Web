@@ -5,7 +5,7 @@ import '../components_css/contact.css';
 const contactDetails = [
   {
     country: "United Kingdom",
-    address: ["1 Tranent Walk", "Dundee, United Kingdom", "DD40XW"],
+    address: ["51 Brougham Gardens", "Dundee, United Kingdom", "DD4 6TN"],
     phone: "+44(0)7770093639",
     email: "colablearn2024@gmail.com",
   },

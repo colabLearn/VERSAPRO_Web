@@ -4,21 +4,21 @@ import '../components_css/team.css';
 
 const team = [
   {
-    image_url: "/images/MD_CEO.jpg",
-    profile_link: "/Tunji-profile-page",
+    image_url: "/images/tunji_2.jpg",
+    profile_link: "#",
     name: 'Adetunji Adeniran',
-    position: "Tech Lead",
+    position: "Founder/Tech-Lead",
   },
   {
     image_url: "/images/diran.jpg",
-    profile_link: "/Diran-profile-page",
+    profile_link: "#",
     name: 'Adediran Adeniran',
-    position: "Operations Lead",
+    position: "VPimSys Design-Lead",
   },{
     image_url: "/images/manager.jpg",
-    profile_link: "/kenny-profile-page",
+    profile_link: "#",
     name: 'Kehinde Adeniran',
-    position: "Team Manager",
+    position: "Manager",
   },
 ];
 

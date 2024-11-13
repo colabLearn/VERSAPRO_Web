@@ -1,38 +1,4 @@
 
-/* Default Styles (applies to all devices by default) */
-body {
-  font-size: 14px; /* Default for mobile phones */
-}
-
-.container {
-  padding: 10px; /* Default for mobile phones */
-}
-
-/* For tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    font-size: 16px;
-  }
-  
-  .container {
-    padding: 20px;
-  }
-}
-
-/* For larger screens (desktops) */
-@media (min-width: 992px) {
-  .container {
-    padding: 40px;
-    margin-left: 200px;
-    margin-right: 150px;
-  }
-}
-
-/* Typography */
-.page-title {
-  color: #babac0;
-  font-size: 36px;
-}
 
 .mission-paragraph {
   font-size: 30px;
@@ -42,94 +8,17 @@ body {
   color: rgb(204, 227, 233);
 }
 
-/* Header Styles */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: 'Great Vibes', cursive;
-  margin-left: 10px;
-  
-}
-
-.header div {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  height: 40px;
-  margin-right: 16px;
-}
-
-.menu {
-  margin: 16px 0;
-}
-
 /* Home Card */
 .home-card {
-  width: 100%;
+  width: 800px;
+  margin: 30px auto;
   background-size: cover;
-  background-position: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   color: #fff;
-  padding: 10px;
+  padding: 20px;
   background-image: url('/images/cardBack1.jpg');
 }
 
-/* Content Container */
-.content-container div {
-  background: colorBgContainer;
-  padding: 0;
-}
 
-/* Custom Divider */
-.custom-divider {
-  border-top: 5px solid #172102 !important;
-}
 
-/* Section Styles */
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-/* Collapse Component */
-.ant-collapse {
-  width: 100%;
-}
-
-.ant-collapse-header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.ant-collapse-header img {
-  width: 40px;
-  height: 40px;
-  margin-right: 8px;
-}
-
-.ant-collapse-content,
-.ant-collapse-content-box {
-  padding: 16px;
-}
-
-/* Project Description */
-.project-description ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-.project-description p {
-  margin: 0 0 10px;
-}
-
-.project-link {
-  display: inline-block;
-  margin-top: 10px;
-}
 

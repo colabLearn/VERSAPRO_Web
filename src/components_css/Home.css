@@ -1,0 +1,78 @@
+/* Home Card styling */
+.home-card {
+    width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/cardBack1.jpg');
+    transition: transform 0.3s ease;
+}
+
+/* Card hover effect */
+.home-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Carousel styling */
+.ant-carousel .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+/* Mission Paragraph */
+.mission-paragraph {
+    font-size: 30px;
+    font-family: 'Handwritten', Friendly;
+    line-height: 1.6;
+    text-align: justify;
+    color: rgb(204, 227, 233);
+    padding: 0 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframe animation for text fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .home-card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .mission-paragraph {
+        font-size: 24px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-card {
+        width: 95%;
+    }
+
+    .mission-paragraph {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+}

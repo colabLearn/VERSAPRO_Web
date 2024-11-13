@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Breadcrumb, theme , Divider } from 'antd'
+import {Breadcrumb} from 'antd'
 import '../components_css/Layout.css';
 const Header = () => (
     <header className='header'>

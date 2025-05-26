@@ -20,6 +20,7 @@ const team = [
     name: 'Kehinde Adeniran',
     position: "Manager",
   },
+  
 ];
 
 const Team = () => {

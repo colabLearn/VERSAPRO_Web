@@ -469,6 +469,7 @@ body::before {
 /* Newsletter Form */
 .newsletter-form {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
     margin-top: 1rem;
 }

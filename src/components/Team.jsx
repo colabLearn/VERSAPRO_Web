@@ -26,17 +26,6 @@ const team = [
     }
   },
   {
-    image_url: "/images/manager.jpg",
-    name: 'Kehinde Adeniran',
-    position: "Manager",
-    bio: "Experienced in project management and team leadership, ensuring smooth operations and delivery.",
-    social: {
-      linkedin: "#",
-      github: "#",
-      email: "mailto:kehinde@versapro.com"
-    }
-  },
-  {
     image_url: "/images/IMG_5795.png",
     name: 'Anh Khoi',
     position: "Front-end Developer",

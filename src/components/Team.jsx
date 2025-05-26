@@ -5,7 +5,7 @@ import '../components_css/team.css';
 const team = [
   {
     image_url: "/images/tunji_2.jpg",
-    name: 'Adetunji Adeniran',
+    name: 'Adetunji Adeniran, PhD.',
     position: "Founder/Tech-Lead",
     bio: "Leading innovation and technical strategy with over 10 years of experience in software development.",
     social: {

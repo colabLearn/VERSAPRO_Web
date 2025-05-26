@@ -1,0 +1,11 @@
+/*Partner Badge CSS */
+.partners-list img {
+    width: 150px;  /* Adjust size as needed */
+    height: auto;
+    margin: 20px;  /* Add margin around the badge */
+  }
+  
+  .partners-list img:hover {
+    opacity: 0.8;  /* Hover effect */
+  }
+  

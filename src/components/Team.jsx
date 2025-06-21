@@ -7,7 +7,14 @@ const team = [
     image_url: "/images/tunji_2.jpg",
     name: 'Adetunji Adeniran',
     position: "Founder/Tech-Lead",
-    bio: "Leading innovation and technical strategy with over 10 years of experience in software development.",
+    bio: "Leading innovation and technical strategy with over 10 years of experience in software development. Specializes in cloud architecture, distributed systems, and enterprise software solutions. Has successfully led multiple high-impact projects and mentored numerous developers throughout his career.",
+    expertise: [
+      "Cloud Architecture",
+      "Distributed Systems",
+      "Enterprise Software",
+      "Team Leadership"
+    ],
+    achievements: "Led the development of several successful enterprise solutions and established the company's technical roadmap.",
     social: {
       linkedin: "#",
       github: "#",
@@ -15,10 +22,17 @@ const team = [
     }
   },
   {
-    image_url: "/images/diran.jpg",
+    image_url: "/src/assets/adetunji.jpeg",
     name: 'Adediran Adeniran',
     position: "VPimSys Design-Lead",
-    bio: "Expert in system design and architecture, specializing in scalable enterprise solutions.",
+    bio: "I am a Senior Financial Controller with over a decade of experience in finance, accounting, financial reporting, and process automation. My career has been defined by a strong commitment to leveraging technology to drive efficiency and accuracy in financial operations. As a tech-oriented finance professional, I specialize in integrating automation solutions to streamline workflows, enhance data integrity, and support strategic decision-making. I believe that the future of finance lies in intelligent automation, and I am passionate about bridging the gap between traditional financial practices and innovative digital tools.",
+    expertise: [
+      "System Architecture",
+      "Design Patterns",
+      "Enterprise Solutions",
+      "UI/UX Design"
+    ],
+    achievements: "Architected the VPimSys platform from ground up, implementing industry-leading design practices.",
     social: {
       linkedin: "#",
       github: "#",
@@ -26,21 +40,17 @@ const team = [
     }
   },
   {
-    image_url: "/images/manager.jpg",
-    name: 'Kehinde Adeniran',
-    position: "Manager",
-    bio: "Experienced in project management and team leadership, ensuring smooth operations and delivery.",
-    social: {
-      linkedin: "#",
-      github: "#",
-      email: "mailto:kehinde@versapro.com"
-    }
-  },
-  {
     image_url: "/images/IMG_5795.png",
     name: 'Anh Khoi',
     position: "Front-end Developer",
-    bio: "Passionate front-end developer with expertise in modern web technologies and innovative solutions.",
+    bio: "Passionate front-end developer with expertise in modern web technologies and innovative solutions. Specializes in creating responsive, user-friendly interfaces using the latest front-end frameworks and best practices. Committed to delivering high-quality, performant web applications.",
+    expertise: [
+      "React.js",
+      "Modern CSS",
+      "UI/UX Implementation",
+      "Web Performance"
+    ],
+    achievements: "Developed and maintained multiple key features of the company's web applications.",
     social: {
       linkedin: "#",
       github: "#",
@@ -78,6 +88,18 @@ const Team = () => {
               <h3>{member.name}</h3>
               <span className="position">{member.position}</span>
               <p className="bio">{member.bio}</p>
+              <div className="expertise">
+                <h4>Areas of Expertise</h4>
+                <ul>
+                  {member.expertise.map((skill, i) => (
+                    <li key={i}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="achievements">
+                <h4>Key Achievements</h4>
+                <p>{member.achievements}</p>
+              </div>
             </div>
           </div>
         ))}

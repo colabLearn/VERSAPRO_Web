@@ -216,7 +216,7 @@
 
 .member-info {
     padding: 1.5rem;
-    text-align: center;
+    text-align: left;
 }
 
 .member-info h3 {
@@ -235,6 +235,48 @@
 .member-info .bio {
     color: var(--text-secondary);
     line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.expertise {
+    margin-bottom: 1.5rem;
+}
+
+.expertise h4, .achievements h4 {
+    font-size: 1.1rem;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.expertise ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.expertise li {
+    background: rgba(14, 165, 233, 0.1);
+    color: var(--primary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.achievements {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.achievements p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 .team-cta {
@@ -287,5 +329,18 @@
 
     .team-cta {
         padding: 2rem 1rem;
+    }
+
+    .member-info {
+        padding: 1rem;
+    }
+
+    .expertise ul {
+        gap: 0.4rem;
+    }
+
+    .expertise li {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
     }
 }

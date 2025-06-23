@@ -19,7 +19,7 @@ const Home = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img src="/src/assets/chatGPTImage.png" alt="ChatGPT Technology" />
+          <img src="/images/chatGPTImage.png" alt="ChatGPT Technology" />
         </div>
       </section>
 

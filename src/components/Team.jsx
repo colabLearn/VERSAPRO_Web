@@ -85,20 +85,24 @@ const Team = () => {
               </div>
             </div>
             <div className="member-info">
-              <h3>{member.name}</h3>
-              <span className="position">{member.position}</span>
-              <p className="bio">{member.bio}</p>
-              <div className="expertise">
-                <h4>Areas of Expertise</h4>
-                <ul>
-                  {member.expertise.map((skill, i) => (
-                    <li key={i}>{skill}</li>
-                  ))}
-                </ul>
+              <div className="member-basic-info">
+                <h3>{member.name}</h3>
+                <span className="position">{member.position}</span>
               </div>
-              <div className="achievements">
-                <h4>Key Achievements</h4>
-                <p>{member.achievements}</p>
+              <div className="member-details">
+                <p className="bio">{member.bio}</p>
+                <div className="expertise">
+                  <h4>Areas of Expertise</h4>
+                  <ul>
+                    {member.expertise.map((skill, i) => (
+                      <li key={i}>{skill}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="achievements">
+                  <h4>Key Achievements</h4>
+                  <p>{member.achievements}</p>
+                </div>
               </div>
             </div>
           </div>

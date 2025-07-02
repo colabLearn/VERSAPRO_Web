@@ -151,11 +151,76 @@
     overflow: hidden;
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+/* Hover indicator - subtle border animation */
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius);
+    background: linear-gradient(45deg, var(--primary), var(--primary-dark)) border-box;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.team-card:hover::before {
+    opacity: 1;
+}
+
+/* Subtle floating animation to indicate interactivity */
+@keyframes subtle-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+.team-card {
+    animation: subtle-float 3s ease-in-out infinite;
 }
 
 .team-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-lg);
+    animation: none;
+}
+
+/* Add a subtle glow effect */
+.team-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.team-card:hover::after {
+    opacity: 1;
 }
 
 .member-image {
@@ -178,6 +243,28 @@
     transform: scale(1.1);
 }
 
+/* Add a subtle overlay to indicate more content */
+.member-image::after {
+    content: '👆 Hover for more info';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    padding: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translateY(100%);
+}
+
+.team-card:hover .member-image::after {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
 .social-links {
     position: absolute;
     bottom: 0;
@@ -190,10 +277,12 @@
     justify-content: center;
     transform: translateY(100%);
     transition: transform 0.3s ease;
+    opacity: 0;
 }
 
 .team-card:hover .social-links {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .social-links a {
@@ -219,20 +308,58 @@
     text-align: left;
 }
 
-.member-info h3 {
+.member-basic-info {
+    margin-bottom: 0;
+    position: relative;
+}
+
+/* Add a subtle indicator arrow */
+.member-basic-info::after {
+    content: '▼';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    font-size: 1.4rem;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .member-basic-info::after {
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 0.9;
+}
+
+.member-basic-info h3 {
     font-size: 1.5rem;
     color: var(--text);
     margin-bottom: 0.5rem;
+    padding-right: 1.5rem;
 }
 
-.member-info .position {
+.member-basic-info .position {
     display: block;
     color: var(--primary);
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
-.member-info .bio {
+.member-details {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .member-details {
+    max-height: 1000px;
+    opacity: 1;
+    margin-top: 1rem;
+}
+
+.member-details .bio {
     color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: 1.5rem;
@@ -342,5 +469,14 @@
     .expertise li {
         font-size: 0.8rem;
         padding: 0.3rem 0.6rem;
+    }
+    
+    /* Reduce animation on mobile for better performance */
+    .team-card {
+        animation: none;
+    }
+    
+    .member-basic-info::after {
+        display: none;
     }
 }

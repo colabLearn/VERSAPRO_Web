@@ -180,7 +180,7 @@
     pointer-events: none;
 }
 
-.team-card:hover::before {
+.team-grid .team-card:hover::before {
     opacity: 1;
 }
 
@@ -198,7 +198,7 @@
     animation: subtle-float 3s ease-in-out infinite;
 }
 
-.team-card:hover {
+.team-grid .team-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-lg);
     animation: none;
@@ -219,7 +219,7 @@
     pointer-events: none;
 }
 
-.team-card:hover::after {
+.team-grid .team-card:hover::after {
     opacity: 1;
 }
 
@@ -239,7 +239,7 @@
     transition: transform 0.3s ease;
 }
 
-.team-card:hover .member-image img {
+.team-grid .team-card:hover .member-image img {
     transform: scale(1.1);
 }
 
@@ -260,9 +260,20 @@
     transform: translateY(100%);
 }
 
-.team-card:hover .member-image::after {
+.team-grid .team-card:hover .member-image::after {
     opacity: 0;
     transform: translateY(100%);
+}
+
+/* Force all social links to stay hidden by default */
+.team-grid .team-card .social-links {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.team-grid .team-card:hover .social-links {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
 }
 
 .social-links {
@@ -275,14 +286,7 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-    transform: translateY(100%);
     transition: transform 0.3s ease;
-    opacity: 0;
-}
-
-.team-card:hover .social-links {
-    transform: translateY(0);
-    opacity: 1;
 }
 
 .social-links a {
@@ -327,9 +331,15 @@
     transition: all 0.3s ease;
 }
 
-.team-card:hover .member-basic-info::after {
-    transform: translateY(-50%) rotate(180deg);
-    opacity: 0.9;
+/* Force all arrows to stay in default state */
+.team-grid .team-card .member-basic-info::after {
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+.team-grid .team-card:hover .member-basic-info::after {
+    transform: translateY(-50%) rotate(180deg) !important;
+    opacity: 0.9 !important;
 }
 
 .member-basic-info h3 {
@@ -351,12 +361,31 @@
     overflow: hidden;
     opacity: 0;
     transition: all 0.3s ease;
+    margin-top: 0;
+    pointer-events: none;
 }
 
-.team-card:hover .member-details {
+/* Use a more direct approach for hover effects */
+.team-grid .team-card:hover .member-details {
     max-height: 1000px;
     opacity: 1;
     margin-top: 1rem;
+    pointer-events: auto;
+}
+
+/* Force all non-hovered cards to stay collapsed */
+.team-grid .team-card .member-details {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+    pointer-events: none;
+}
+
+.team-grid .team-card:hover .member-details {
+    max-height: 1000px !important;
+    opacity: 1 !important;
+    margin-top: 1rem !important;
+    pointer-events: auto !important;
 }
 
 .member-details .bio {
@@ -472,7 +501,7 @@
     }
     
     /* Reduce animation on mobile for better performance */
-    .team-card {
+    .team-grid .team-card {
         animation: none;
     }
     

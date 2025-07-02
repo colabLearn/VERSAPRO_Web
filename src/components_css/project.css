@@ -46,14 +46,14 @@
     padding: 20px;
     background-color: #f0f0f0;
     border-radius: 8px;
-    height: 250px;
+    max-height: 250px;
     overflow: hidden;
     position: relative; /* needed for fade effect */
-    transition: height 0.3s ease;
+    transition: max-height 0.3s ease;
     cursor: pointer;
   }
-  .project-description.expanded {
-      height: auto;
+  .project-description:hover  {
+      max-height: 1000px;
       overflow: visible;
     }
      /* Optional: Fade out effect at the bottom when collapsed */
@@ -260,7 +260,7 @@
 
 .project-features {
     margin-bottom: 2rem;
-    height: 250px;
+    /*height: 250px;*/
 }
 
 .project-features h3 {

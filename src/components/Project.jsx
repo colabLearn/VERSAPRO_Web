@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React  from 'react';
 import { Button } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import '../components_css/project.css';
@@ -63,16 +63,7 @@ const projects = [
 ];
 
 const Project = () => {
-  // Track which project descriptions are expanded using an object keyed by project id
-  const [expandedProjects, setExpandedProjects] = useState({});
-   const toggleExpand = (id) => {
-    setExpandedProjects(prev => ({
-      ...prev,
-      [id]: !prev[id]
-    }));
-  };
-
-  return (
+    return (
     <div className="projects-container">
       <div className="projects-header">
         <h1>Our Projects</h1>
@@ -89,13 +80,16 @@ const Project = () => {
 
             <div className="project-content">
               <h2>{project.title}</h2>
-              <p 
+              {/* <p 
                   className={`project-description ${expandedProjects[project.id] ? 'expanded' : '' }`}
                   onClick={() => toggleExpand(project.id)}
                   style={{cursor: 'pointer', position: 'relative'}}
                   title={expandedProjects[project.id] ? "Click to view less" : "Click to view more"} 
                   >
-                  {project.description}</p>
+                  {project.description}</p> */}
+                  <p className="project-description">
+                      {project.description}
+                  </p>
 
               <div className="project-features">
                 <h3>Key Features</h3>

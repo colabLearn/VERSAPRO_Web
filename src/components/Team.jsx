@@ -22,7 +22,7 @@ const team = [
     }
   },
   {
-    image_url: "/src/assets/adetunji.jpeg",
+    image_url: "/images/adetunji.jpeg",
     name: 'Adediran Adeniran',
     position: "VPimSys Design-Lead",
     bio: "I am a Senior Financial Controller with over a decade of experience in finance, accounting, financial reporting, and process automation. My career has been defined by a strong commitment to leveraging technology to drive efficiency and accuracy in financial operations. As a tech-oriented finance professional, I specialize in integrating automation solutions to streamline workflows, enhance data integrity, and support strategic decision-making. I believe that the future of finance lies in intelligent automation, and I am passionate about bridging the gap between traditional financial practices and innovative digital tools.",
@@ -40,7 +40,7 @@ const team = [
     }
   },
   {
-    image_url: "/src/assets/IMG_6307.jpeg",
+    image_url: "/images/IMG_5795.png",
     name: 'Anh Khoi',
     position: "Front-end Developer",
     bio: "Passionate front-end developer with expertise in modern web technologies and innovative solutions. Specializes in creating responsive, user-friendly interfaces using the latest front-end frameworks and best practices. Committed to delivering high-quality, performant web applications.",

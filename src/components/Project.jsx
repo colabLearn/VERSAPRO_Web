@@ -31,6 +31,22 @@ const projects = [
     ],
     link: "#",
     status: "Beta Testing"
+  },
+  {
+    id: '3',
+    title: "EdTech",
+    logo: "/images/edutech-logo.png",
+    description: "A comprehensive educational technology platform designed to bridge the digital divide in education. This project focuses on creating accessible, engaging, and effective learning experiences for students of all ages and backgrounds, leveraging cutting-edge technology to transform traditional education methods.",
+    features: [
+      "Personalized Learning Paths",
+      "Virtual Reality Learning Environments",
+      "Real-time Student Progress Tracking",
+      "Interactive STEM Modules",
+      "Teacher Collaboration Tools",
+      "Mobile-First Learning Experience"
+    ],
+    link: "#",
+    status: "Planning Phase"
   }
 ];
 

@@ -190,8 +190,8 @@
 .project-header {
     position: relative;
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
-    border-bottom: 1px solid rgba(14, 165, 233, 0.1);
+    background: linear-gradient(135deg, rgba(62, 107, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    border-bottom: 1px solid rgba(62, 107, 255, 0.1);
 }
 
 .project-logo {
@@ -284,7 +284,7 @@
 .projects-cta {
     text-align: center;
     padding: 4rem;
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(135deg, rgba(62, 107, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
     border-radius: var(--border-radius);
     margin-top: 4rem;
 }

@@ -18,7 +18,7 @@ const team = [
     social: {
       linkedin: "#",
       github: "#",
-      email: "mailto:adetunji@versapro.com"
+      email: "mailto:info@versapro.com"
     }
   },
   {
@@ -36,11 +36,11 @@ const team = [
     social: {
       linkedin: "#",
       github: "#",
-      email: "mailto:adediran@versapro.com"
+      email: "mailto:adediran.adeniran@versapro.com"
     }
   },
   {
-    image_url: "/images/IMG_5795.png",
+    image_url: "/images/khoi.jpeg",
     name: 'Anh Khoi',
     position: "Front-end Developer",
     bio: "Passionate front-end developer with expertise in modern web technologies and innovative solutions. Specializes in creating responsive, user-friendly interfaces using the latest front-end frameworks and best practices. Committed to delivering high-quality, performant web applications.",
@@ -54,7 +54,7 @@ const team = [
     social: {
       linkedin: "#",
       github: "#",
-      email: "mailto:anhkhoi@versapro.com"
+      email: "mailto:khoi.nguyen@versapro.com"
     }
   }
 ];

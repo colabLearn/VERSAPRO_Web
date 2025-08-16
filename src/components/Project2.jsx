@@ -25,7 +25,7 @@ const Project = () => (
         {projects.map(project => (
             <Panel header={project.label} key={project.key}>
                 <p>{project.projectDescription}</p>
-                {/* You can include the project logo and link if needed */}
+                {/*project logo and link if needed */}
                 { <img src={project.projectLogoUrl} alt={project.label} />}
                 {<a href={project.projectLink} target="_blank" rel="noopener noreferrer">View More</a>}
             </Panel>

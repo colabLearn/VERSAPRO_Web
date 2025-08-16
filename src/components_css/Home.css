@@ -165,7 +165,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 4rem 0 2rem;
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.02) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(135deg, rgba(62, 107, 255, 0.02) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .feature-card {
@@ -201,7 +201,7 @@
 /* Mission Section */
 .mission-section {
     padding: 2rem 0 4rem;
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(135deg, rgba(62, 107, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
     border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
@@ -246,7 +246,7 @@
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
-    border: 1px solid rgba(14, 165, 233, 0.1);
+    border: 1px solid rgba(62, 107, 255, 0.1);
 }
 
 .mission-card:hover {

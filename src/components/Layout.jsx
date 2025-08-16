@@ -41,8 +41,8 @@ const Header = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 
                 <a href="/" className="logo-link">
-                    <img className="logo" src="/images/logo3.jpg" alt="VERSAPRO Logo" />
-                    <span className="logo-text">VERSAPRO</span>
+                    <img className="logo" src="/images/VersaPro_logo_colour.png" alt="VERSAPRO Logo" />
+                    {/* <span className="logo-text">VERSAPRO</span> */}
                 </a>
 
                 {/* Desktop Navigation */}

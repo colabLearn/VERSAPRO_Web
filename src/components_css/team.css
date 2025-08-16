@@ -213,7 +213,7 @@
     right: 0;
     bottom: 0;
     border-radius: var(--border-radius);
-    box-shadow: 0 0 20px rgba(14, 165, 233, 0.1);
+    box-shadow: 0 0 20px rgba(62, 107, 255, 0.1);
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
@@ -415,7 +415,7 @@
 }
 
 .expertise li {
-    background: rgba(14, 165, 233, 0.1);
+    background: rgba(62, 107, 255, 0.1);
     color: var(--primary);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
@@ -438,7 +438,7 @@
 .team-cta {
     text-align: center;
     padding: 4rem 0;
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(135deg, rgba(62, 107, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
     border-radius: var(--border-radius);
 }
 

@@ -91,7 +91,7 @@ const Footer = () => {
                     <div className="social-links">
                         <a href="https://facebook.com" aria-label="Facebook"><FacebookOutlined /></a>
                         <a href="https://twitter.com" aria-label="Twitter"><TwitterOutlined /></a>
-                        <a href="https://linkedin.com" aria-label="LinkedIn"><LinkedinOutlined /></a>
+                        <a href="https://linkedin.com/company/versa-pro" aria-label="LinkedIn"><LinkedinOutlined /></a>
                         <a href="https://instagram.com" aria-label="Instagram"><InstagramOutlined /></a>
                     </div>
                 </div>
@@ -110,10 +110,10 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3>Contact Us</h3>
                     <div className="footer-links">
-                        <a href="mailto:info@versapro.com">
-                            <MailOutlined /> info@versapro.com
+                        <a href="mailto:info@versapro.tech">
+                            <MailOutlined /> info@versapro.tech
                         </a>
-                        <a href="tel:+1234567890">
+                        <a href="tel:+447770093639">
                             <PhoneOutlined /> +1 (234) 567-890
                         </a>
                         <address>

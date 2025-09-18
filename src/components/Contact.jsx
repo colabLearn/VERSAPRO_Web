@@ -16,13 +16,13 @@ const contactDetails = [
     country: "United Kingdom",
     address: ["51 Brougham Gardens", "Dundee, United Kingdom", "DD4 6TN"],
     phone: "+44(0)7770093639",
-    email: "colablearn2024@gmail.com",
+    email: "management@versapro.tech",
   },
   {
     country: "Germany",
     address: ["Hauptstraße 1", "Berlin, Germany", "10115"],
     phone: "+49 30 12345678",
-    email: "info@versapro.de",
+    email: "adediran.adeniran@versapro.tech",
   },
 ];
 

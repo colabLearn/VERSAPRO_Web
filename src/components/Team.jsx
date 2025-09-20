@@ -5,7 +5,7 @@ import '../components_css/team.css';
 const team = [
   {
     image_url: "/images/tunji_2.jpg",
-    name: 'Adetunji Adeniran.',
+    name: 'Adetunji Adeniran, PhD, FHEA.',
     position: "Founder/Tech-Lead",
     bio: "Leading innovation and technical strategy with over 10 years of experience in software development. Specializes in cloud architecture, distributed systems, and enterprise software solutions. Has successfully led multiple high-impact projects and mentored numerous developers throughout his career.",
     expertise: [

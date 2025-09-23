@@ -16,7 +16,7 @@ const projects = [
   {
     id: '1',
     title: "MathMorph",
-    logo: "/images/MathMorph.png",
+    logo: "/images/mathmorph2.png",
     description: "MathMorph is our  flagship AI-powered math learning platform, designed to revolutionize how students learn and master math topics."+
                  " This project focuses on creating accessible, engaging, and effective learning experiences for students of "+
                  "all ages and backgrounds, leveraging cutting-edge technology to transform traditional education methods." +
@@ -34,7 +34,7 @@ const projects = [
   {
     id: '2',
     title: "ColabLearn",
-    logo: "/images/colabLearnLogo.jpg",
+    logo: "/images/vp_logo.png",
     description: "An innovative e-learning platform dedicated to delivering cutting-edge tech courses and programs. Our ongoing work leverages the latest research in learning science and engineering to create content that fosters deep understanding and knowledge creation.",
     features: [
       "Advanced Learning Management System",
@@ -44,21 +44,21 @@ const projects = [
     ],
     link: "https://www.youtube.com/@ColabLearn",
     status: ProjectPhases.BETA
-  },
-  {
-    id: '3',
-    title: "VPimSys",
-    logo: "/images/VPimSys_Logo.jpg",
-    description: "A cloud-based platform designed to revolutionize how small retail businesses manage their operations. VPimSys provides an affordable, easy-to-use, and scalable solution for managing product catalogs, purchase orders, inventory, and analytics.",
-    features: [
-      "Real-time Inventory Management",
-      "Sales Analytics Dashboard",
-      "Cloud-based POS System",
-      "Automated Purchase Orders"
-    ],
-    link: "#",
-    status: ProjectPhases.PLANNING
-  }
+   }//,
+  // {
+  //   id: '3',
+  //   title: "VPimSys",
+  //   logo: "/images/VPimSys_Logo.jpg",
+  //   description: "A cloud-based platform designed to revolutionize how small retail businesses manage their operations. VPimSys provides an affordable, easy-to-use, and scalable solution for managing product catalogs, purchase orders, inventory, and analytics.",
+  //   features: [
+  //     "Real-time Inventory Management",
+  //     "Sales Analytics Dashboard",
+  //     "Cloud-based POS System",
+  //     "Automated Purchase Orders"
+  //   ],
+  //   link: "#",
+  //   status: ProjectPhases.PLANNING
+  // }
   
 ];
 

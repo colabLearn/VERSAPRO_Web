@@ -12,6 +12,7 @@ import {
     InstagramOutlined
 } from '@ant-design/icons';
 import '../components_css/Layout.css';
+import Navbar from './navbar';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -36,6 +37,7 @@ const Header = () => {
 
     return (
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+            <Navbar />
             <div className="header-content">
                 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

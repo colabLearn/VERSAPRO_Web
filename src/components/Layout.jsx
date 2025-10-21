@@ -150,7 +150,8 @@ const Footer = () => {
 const Layout = ({ children }) => {
     return (
         <div className="layout">
-            <Header />
+            {/* <Header /> */}
+            <Navbar />
             <main className="content">
                 {children}
             </main>

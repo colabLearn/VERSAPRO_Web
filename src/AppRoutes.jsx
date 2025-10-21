@@ -1,7 +1,4 @@
-
-
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Team from './components/Team';
 import Project from './components/Project';
@@ -10,7 +7,6 @@ import Partners from './components/Partners';
 
 const AppRoutes = () => {
     return (
-        <Router>
             <Routes>
                <Route path="/" element={<Home/>} />
                <Route path="/team" element={<Team/>} />
@@ -18,7 +14,6 @@ const AppRoutes = () => {
                <Route path="/contact" element={<Contact/>} />
                <Route path="/partners" element={<Partners/>} />
             </Routes>
-        </Router>
     );
 };
 

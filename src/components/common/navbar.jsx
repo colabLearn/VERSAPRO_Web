@@ -1,17 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/VersaPro_logo_colour (1).png";
+import logo from "../../assets/VersaPro_logo_colour (1).png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(!open);
-    console.log("i am clicked")
   };
   return (
     <>
-      <nav className="overflow-x-hidden md:p-8 p-4 sticky top-0 z-[9999]">
+      <nav className="overflow-x-hidden md:p-8 p-4 sticky top-0 z-[9999] shadow-sm bg-white">
         <div className="nested bg-primary flex flex-row items-center justify-between md:py-4 md:px-8 py-2 px-4 rounded-full">
           <Link
             to="/"

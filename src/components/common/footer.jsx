@@ -65,7 +65,6 @@ export default function Footer() {
                 {" "}
                 <PhoneOutlined /> +447770093639
               </a>
-              <p>123, Business District, BD, TC12345</p>
             </ul>
           </div>
 

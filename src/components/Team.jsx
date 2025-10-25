@@ -32,7 +32,7 @@ export default function Team() {
             ></div>
             <div className="details md:p-4 p-3 flex flex-col gap-2">
               <h3 className="capitalize font-semibold">Adetunji Adeniran, PhD, FHEA.</h3>
-              <p className="text-white/70">founder, tech-lead</p>
+              <p className="text-white/70 capitalize">founder, tech-lead</p>
             </div>{" "}
           </div>
           <div className="card flex flex-col border border-1 border-text-color bg-primary text-white md:gap-8 gap-4 rounded md:w-[400px] w-full">
@@ -47,24 +47,10 @@ export default function Team() {
             ></div>
             <div className="details md:p-4 p-3 flex flex-col gap-2">
               <h3 className="capitalize font-semibold">Adediran Adeniran</h3>
-              <p className="text-white/70">VPimSys Design-Lead</p>
+              <p className="text-white/70 capitalize">VPimSys Design-Lead</p>
             </div>
           </div>
-          <div className="card flex flex-col border border-1 border-text-color bg-primary text-white md:gap-8 gap-4 rounded md:w-[400px] w-full">
-            <div
-              style={{
-                backgroundImage: `url(${khoi})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                height: "50vh",
-              }}
-            ></div>
-            <div className="details md:p-4 p-3 flex flex-col gap-2">
-              <h3 className="capitalize font-semibold">Anh Khoi</h3>
-              <p className="text-white/70">frontend engineer</p>
-            </div>
-          </div>
+         
           <div className="card flex flex-col border border-1 border-text-color bg-primary text-white md:gap-8 gap-4 rounded md:w-[400px] w-full">
             <div
               style={{
@@ -77,8 +63,23 @@ export default function Team() {
             ></div>
             <div className="details md:p-4 p-3 flex flex-col gap-2">
               <h3 className="capitalize font-semibold">mubaraq oyebisi</h3>
-              <p className="text-white/70">frontend engineer</p>
+              <p className="text-white/70 capitalize">frontend engineer</p>
             </div>{" "}
+          </div>
+           <div className="card flex flex-col border border-1 border-text-color bg-primary text-white md:gap-8 gap-4 rounded md:w-[400px] w-full">
+            <div
+              style={{
+                backgroundImage: `url(${khoi})`,
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                height: "50vh",
+              }}
+            ></div>
+            <div className="details md:p-4 p-3 flex flex-col gap-2">
+              <h3 className="capitalize font-semibold">Anh Khoi</h3>
+              <p className="text-white/70 capitalize">frontend engineer - intern</p>
+            </div>
           </div>
         </section>
       </main>

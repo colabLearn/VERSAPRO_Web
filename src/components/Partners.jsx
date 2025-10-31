@@ -2,6 +2,7 @@ import { Button } from "antd";
 import { GlobalOutlined, TeamOutlined } from "@ant-design/icons";
 import Navbar from "./common/navbar";
 // import '../components_css/Partners.css';
+import { motion } from "framer-motion";
 
 const partners = [
   {
@@ -26,7 +27,7 @@ const Partners = () => {
     <>
     <Navbar />
       <div className="partners-container md:px-[3rem] px-[2rem] md:py-[5rem] py-[2rem] overflow-x-hidden">
-        <div className="partners-header flex flex-col md:items-center md:text-center md:justify-center w-[100%] md:w-[65%] mx-auto gap-3 md:gap-4">
+        <motion.div className="partners-header flex flex-col md:items-center md:text-center md:justify-center w-[100%] md:w-[65%] mx-auto gap-3 md:gap-4" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 2.0 }}>
           <h1 className="font-semibold text-2xl md:text-4xl leading-normal">
             Our Partners
           </h1>
@@ -35,16 +36,21 @@ const Partners = () => {
             and real-world experience to design transformative learning journeys
             and project solutions that set new standards of excellence.
           </p>
-        </div>
+        </motion.div>
 
         <div className="partners-grid flex flex-col md:flex-row items-start gap-4 mt-10 md:mt-20">
           {partners.map((partner) => (
-            <div
+            <motion.div
               className="partner-card flex flex-col justify-between gap-2 bg-primary/10 md:p-8 p-4 flex-1 h-fit md:h-[45rem]"
               key={partner.id}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 2.0 }}
+              whileHover={{ y: -4 }}
             >
               <div className="partner-logo">
-                <img src={partner.logo} alt={partner.name} className="" />
+                <img src={partner.logo} alt={partner.name} className="" loading="lazy" />
               </div>
 
               <div className="partner-content">
@@ -80,18 +86,18 @@ const Partners = () => {
                   Learn More
                 </Button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        <div className="cta-content flex flex-col items-center justify-center mt-10 md:mt-20 gap-2 md:gap-3 bg-secondary/10 py-10 md:py-20 px-5">
+        <motion.div className="cta-content flex flex-col items-center justify-center mt-10 md:mt-20 gap-2 md:gap-3 bg-secondary/10 py-10 md:py-20 px-5" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 2.0 }}>
           <TeamOutlined className="cta-icon md:text-4xl font-bold text-2xl" />
           <h2 className="text-xl md:text-2xl">Become a Partner</h2>
           <p className="text-sm text-center">Join our network of industry leaders and innovators</p>
           <Button type="primary" href="/contact" className="bg-primary text-white" size="large">
             Partner With Us
           </Button>
-        </div>
+        </motion.div>
       </div>
     </>
   );

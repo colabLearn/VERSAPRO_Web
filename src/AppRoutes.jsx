@@ -1,9 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-// import Team from './components/Team';2
-import Project from './components/Project';
-import Contact from './components/Contact'; 
-import Partners from './components/Partners';
+import { lazy } from 'react';
+
+// Lazy load route components
+const Home = lazy(() => import('./components/Home'));
+const Project = lazy(() => import('./components/Project'));
+const Contact = lazy(() => import('./components/Contact'));
+const Partners = lazy(() => import('./components/Partners'));
 
 const AppRoutes = () => {
     return (

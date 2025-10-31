@@ -1,10 +1,13 @@
-import About from "./about";
-import Mission from "./mission";
-import Hero from "./hero";
-import Navbar from "../components/common/navbar";
+import { lazy, Suspense } from "react";
 import bg from "../assets/hero.jpg";
-import Showcase from "./common/showcase";
-import Teams from "./teams";
+
+// Lazy load components
+const About = lazy(() => import("./about"));
+const Mission = lazy(() => import("./mission"));
+const Hero = lazy(() => import("./hero"));
+const Navbar = lazy(() => import("../components/common/navbar"));
+const Showcase = lazy(() => import("./common/showcase"));
+const Teams = lazy(() => import("./teams"));
 
 const Home = () => {
   return (
@@ -18,14 +21,26 @@ const Home = () => {
         }}
       >
         <div className="bg-black/70">
-          <Navbar />
-          <Hero />
+          <Suspense fallback={<div />}> 
+            <Navbar />
+          </Suspense>
+          <Suspense fallback={<div />}> 
+            <Hero />
+          </Suspense>
         </div>
       </div>
-      <About />
-      <Mission />
-      <Showcase />
-      <Teams />
+      <Suspense fallback={<div />}> 
+        <About />
+      </Suspense>
+      <Suspense fallback={<div />}> 
+        <Mission />
+      </Suspense>
+      <Suspense fallback={<div />}> 
+        <Showcase />
+      </Suspense>
+      <Suspense fallback={<div />}> 
+        <Teams />
+      </Suspense>
     </div>
   );
 };

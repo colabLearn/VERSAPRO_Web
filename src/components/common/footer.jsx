@@ -24,6 +24,7 @@ export default function Footer() {
                 src={logo}
                 alt="versa pro logo"
                 className="md:w-[200px] w-[150px]"
+                loading="lazy"
               />
             </Link>
 

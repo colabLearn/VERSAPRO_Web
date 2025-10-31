@@ -86,6 +86,7 @@ const Project = () => {
                   src={project.logo}
                   alt={project.title}
                   className="project-logo w-[100px] md:w-[200px]"
+                  loading="lazy"
                 />
                 <span className="project-status bg-primary rounded-full text-white font-medium md:px-4 md:py-2 px-2 py-1 text-[10px] md:text-base">
                   {project.status}

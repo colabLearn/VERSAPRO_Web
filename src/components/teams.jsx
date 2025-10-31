@@ -5,6 +5,7 @@ import mubarak from "../assets/mubarak.png";
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const teamMembers = [
   {
@@ -59,15 +60,16 @@ export default function Teams() {
       {/* Carousel Section */}
       <section className="relative flex items-center justify-center w-full py-10 md:py-20 overflow-hidden">
         {/* Left Arrow */}
-        <button
+        <motion.button
           onClick={prev}
           className="absolute left-4 md:left-16 z-[9999] rounded-full transition bg-black/50 text-white"
+          whileTap={{ scale: 0.9 }}
         >
           <ChevronLeft size={45} />
-        </button>
+        </motion.button>
 
         {/* Cards */}
-        <div className="flex items-center justify-center relative w-full max-w-6xl h-[60vh]">
+        <motion.div className="flex items-center justify-center relative w-full max-w-6xl h-[60vh]" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 2.0 }}>
           {teamMembers.map((member, index) => {
             const isActive = index === current;
             const isPrev =
@@ -87,9 +89,11 @@ export default function Teams() {
                 "opacity-60 scale-90 z-10 translate-x-[60%] md:translate-x-[200px]";
 
             return (
-              <div
+              <motion.div
                 key={index}
                 className={`absolute transition-all duration-700 ease-in-out ${positionClass}`}
+                whileHover={isActive ? { scale: 1.02 } : {}}
+                transition={{ type: "spring", stiffness: 200, damping: 20 }}
               >
                 <div className="bg-primary text-white rounded-xl overflow-hidden shadow-lg border border-white/10 w-[280px] md:w-[350px]">
                   <div
@@ -106,18 +110,19 @@ export default function Teams() {
                     <p className="text-white/70 capitalize">{member.role}</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* Right Arrow */}
-        <button
+        <motion.button
           onClick={next}
           className="absolute right-4 md:right-16 z-20 rounded-full transition bg-black/50 text-white"
+          whileTap={{ scale: 0.9 }}
         >
           <ChevronRight size={45} />
-        </button>
+        </motion.button>
       </section>
     </main>
   );

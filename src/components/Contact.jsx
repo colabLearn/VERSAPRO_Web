@@ -1,4 +1,5 @@
 import { FaHome, FaPhone, FaEnvelope } from "react-icons/fa";
+import Navbar from "./common/navbar";
 
 export default function Contact() {
   const addresses = [
@@ -19,6 +20,7 @@ export default function Contact() {
   ];
   return (
     <>
+    <Navbar />
       <main className="md:px-[3rem] px-[2rem] md:py-[5rem] py-[2rem] overflow-x-hidden">
         <div className="flex flex-col md:items-center md:text-center md:justify-center w-[100%] md:w-[65%] mx-auto gap-3 md:gap-4">
           <h1 className="font-semibold text-2xl md:text-4xl leading-normal">

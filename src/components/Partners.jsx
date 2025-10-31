@@ -1,5 +1,6 @@
 import { Button } from "antd";
 import { GlobalOutlined, TeamOutlined } from "@ant-design/icons";
+import Navbar from "./common/navbar";
 // import '../components_css/Partners.css';
 
 const partners = [
@@ -23,6 +24,7 @@ const partners = [
 const Partners = () => {
   return (
     <>
+    <Navbar />
       <div className="partners-container md:px-[3rem] px-[2rem] md:py-[5rem] py-[2rem] overflow-x-hidden">
         <div className="partners-header flex flex-col md:items-center md:text-center md:justify-center w-[100%] md:w-[65%] mx-auto gap-3 md:gap-4">
           <h1 className="font-semibold text-2xl md:text-4xl leading-normal">

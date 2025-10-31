@@ -10,7 +10,7 @@ export default function Navbar() {
   };
   return (
     <>
-      <nav className="overflow-x-hidden md:p-8 p-4 sticky top-0 z-[9999] shadow-sm bg-white">
+      <nav className="overflow-x-hidden md:p-8 p-4 shadow-sm">
         <div className="nested bg-primary flex flex-row items-center justify-between md:py-4 md:px-8 py-2 px-4 rounded-full">
           <Link
             to="/"
@@ -25,12 +25,6 @@ export default function Navbar() {
           <ul className="md:flex md:flex-row md:items-center md:gap-10 capitalize text-white font-medium hidden">
             <Link to="/" className="hover:font-bold text-lg">
               home
-            </Link>
-            <Link to="/team" className="hover:font-bold text-lg">
-              team
-            </Link>
-            <Link to="/project" className="hover:font-bold text-lg">
-              projects
             </Link>
             <Link to="/partners" className="hover:font-bold text-lg">
               partners
@@ -48,13 +42,13 @@ export default function Navbar() {
         </div>
 
         {open && (
-          <ul className="flex flex-col gap-4 capitalize bg-white text-text-color font-medium md:hidden fixed w-[91vw] p-3 shadow-2xl rounded-lg mt-2">
+          <ul className="flex flex-col gap-4 capitalize bg-white text-text-color font-medium md:hidden w-[91vw] p-3 shadow-2xl absolute rounded-lg mt-2">
             <Link to="/" className="hover:font-bold text-base border-b-1 border-b-solid border-b pb-2">
               home
             </Link>
-            <Link to="/team" className="hover:font-bold text-base border-b-1 border-b-solid border-b pb-2">
+            {/* <Link to="/team" className="hover:font-bold text-base border-b-1 border-b-solid border-b pb-2">
               team
-            </Link>
+            </Link> */}
             <Link to="/project" className="hover:font-bold text-base border-b-1 border-b-solid border-b pb-2">
               projects
             </Link>

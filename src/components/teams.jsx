@@ -2,6 +2,7 @@ import tunji from "../assets/tunji.jpg";
 import diran from "../assets/diran.jpeg";
 import khoi from "../assets/khoi.jpeg";
 import mubarak from "../assets/mubarak.png";
+import farida from "../assets/faridah.jpeg";
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -27,6 +28,11 @@ const teamMembers = [
     name: "Anh Khoi",
     role: "Frontend Engineer Intern",
     image: khoi,
+  },
+  {
+    name: "Farida Popoola",
+    role: "Digital Marketing Specialist",
+    image: farida,
   },
 ];
 

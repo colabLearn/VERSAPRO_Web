@@ -1,10 +1,10 @@
 import { BulbOutlined } from "@ant-design/icons";
 import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function Hero2() {
   return (
     <>
-      <main className="flex flex-col md:flex-row gap-5 md:justify-between items-start md:items-center md:py-[8rem] md:px-[3rem] p-[2rem]">
+      <main className="flex flex-col md:flex-row gap-5 md:justify-center items-start md:items-center md:py-[8rem] md:px-[3rem] p-[2rem]">
         <motion.div
           className="details flex flex-col md:items-center items-start gap-4 md:gap-5 text-white"
           initial="hidden"
@@ -22,13 +22,13 @@ export default function Hero() {
             className="text-3xl md:text-[50px] leading-[45px] md:leading-[70px] font-semibold md:font-bold w-full md:w-[70%] md:text-center"
             variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 2.0 } } }}
           >
-            Scaling Quality Learning with AI & Learning Science: Empowering Schools, Teachers Families Worldwide 
+           Empowering the Future of STEM Learning with Learning Science and Technology: One Student, One Discovery at a Time 
           </motion.h1>
           <motion.p
-            className="md:w-[49%] md:text-center font-medium"
+            className="md:w:[49%] md:text-center font-medium"
             variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 2.0 } } }}
           >
-           Our mission is to harness the power of AI and learning science to create educational solutions that transform how children learn. By connecting classrooms and homes, and supporting every stakeholder along the way, we strive to reach millions of learners globally bridging gaps and unlocking potential at scale. 
+           We are committed to personalizing transformative learning experiences powered by AI, data, learning science research models and human insight.  
           </motion.p>
 
           <motion.div className="btn flex flex-row items-start gap-3" variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 2.0 } } }}>
@@ -38,7 +38,7 @@ export default function Hero() {
               whileTap={{ scale: 0.97 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              <BulbOutlined className="text-yellow-400 font-bold text-xl md:text-lg" />{" "}
+              <BulbOutlined className="text-yellow-400 font-bold text-xl md:text-lg" />
               <p className="text-sm md:text-lg">Explore Our Solutions</p>
             </motion.button>
           </motion.div>
@@ -47,3 +47,5 @@ export default function Hero() {
     </>
   );
 }
+
+

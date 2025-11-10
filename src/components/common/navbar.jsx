@@ -13,7 +13,7 @@ export default function Navbar() {
     <>
       <nav className="overflow-x-hidden md:p-8 p-4 shadow-sm">
         <motion.div
-          className="nested bg-primary flex flex-row items-center justify-between md:py-4 md:px-8 py-2 px-4 rounded-full"
+          className="nested bg-[#3366ff] flex flex-row items-center justify-between md:py-4 md:px-8 py-2 px-4 rounded-full"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2.0 }}
